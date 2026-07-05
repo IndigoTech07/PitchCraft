@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PitchCraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PitchCraft</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#guide">How It Works</a>
+                <a href="#generator" class="nav-cta">Generate</a>
+                <a href="#features">Features</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <span class="aititle">AI Porposal Generator</span>
+        <h1>Generate Winning Freelance Proposals <span>in Seconds</span></h1>
+        <p>Create personalized, AI-powered proposals optimized for freelance marketplaces.</p>
+        <a href="#generator" class="btn btn-primary">Start Generating</a>
+    </header>
+    <section id="guide" class="guide-section">
+      <h2 class="guide-title">How To Craft Winning Pitches</h2>
+      <p class="guide-subtitle">Follow these three steps to turn standard job posts into high-converting client proposals instantly.</p>
+    
+      <div class="guide-grid">
+        <div class="guide-card">
+            <div class="step-number">01</div>
+            <h3>Drop Job Details</h3>
+            <p>Paste the client's explicit job title or target keywords into the input field. Providing specific niche markers (e.g., "Full-Stack React Node Developer" instead of just "Developer") helps our system align the entire presentation with the technical scope the client expects.</p>
+        </div>
+
+        <div class="guide-card">
+            <div class="step-number">02</div>
+            <h3>Inject Your Value</h3>
+            <p>Quantify your background directly. Clearly outline your exact milestones, industry experience, and your Unique Selling Point (USP) such as a unique workflow, speed asset, or niche expertise. This gives the underlying AI engine the concrete evidence it needs to hook the client's attention.</p>
+        </div>
+
+        <div class="guide-card">
+            <div class="step-number">03</div>
+            <h3>Generate & Profit</h3>
+            <p>Select your optimal pitch tone (e.g., Bold, Friendly) and matching target platform (Upwork, LinkedIn). Click generate to trigger a secure query that writes a highly optimized, character-capped 100–150 word proposal tailored to break past modern client screening pipelines.</p>
+        </div>
+     </div>
+    </section>
+
+    <main id="generator" class="workspace-section">
+        <div class="workspace-container">
+            
+            <div class="card form-card">
+                <h2>Craft Your Pitch</h2>
+                <form id="proposalForm">
+                    <div class="input-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" id="jobTitle" placeholder="e.g., Senior React Developer Needed" maxlength="100" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="experience">Relevant Experience</label>
+                        <textarea id="experience" rows="3" placeholder="e.g., 3 years building e-commerce systems with Next.js..." maxlength="500" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="usp">Unique Selling Point (USP)</label>
+                        <input type="text" id="usp" placeholder="e.g., Can start immediately and offer 2 months support" maxlength="200" required>
+                    </div>
+
+                    <div class="dropdown-row">
+                        <div class="input-group">
+                            <label for="tone">Tone</label>
+                            <select id="tone">
+                                <option value="professional">Professional</option>
+                                <option value="friendly">Friendly</option>
+                                <option value="bold">Bold</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="platform">Platform</label>
+                            <select id="platform">
+                                <option value="upwork">Upwork</option>
+                                <option value="fiverr">Fiverr</option>
+                                <option value="freelancer">LinkedIn</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Generate Proposal</button>
+                </form>
+            </div>
+
+            <div class="card output-card">
+                <h2>Generated Proposal</h2>
+                <div class="output-box">
+                    <div class="output-field">
+                        <span class="field-label">Subject Line:</span>
+                        <div id="subjectOutput" class="placeholder-text">Your optimized subject line will appear here...</div>
+                    </div>
+                    <hr class="divider">
+                    <div class="output-field">
+                        <span class="field-label">Proposal Body:</span>
+                        <div id="proposalOutput" class="placeholder-text">Your customized proposal response will appear here...</div>
+                    </div>
+                </div>
+                <div class="output-actions">
+                    <button id="copyBtn" class="btn btn-secondary" disabled>Copy to Clipboard</button>
+                    <button id="regenerateBtn" class="btn btn-secondary" disabled>Regenerate</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+
+    <section id="features" class="features-section">
+        <h2 class="guide-title">Engineered for Freelancers</h2>
+        <p class="section-subtitle">Advanced automation tools to give you an unfair advantage on every proposal.</p>
+    
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-indicator">AI ENGINE</div>
+            <h3>Context-Aware AI</h3>
+            <p>Built directly on the AI to intelligently parse complex client descriptions and extract hidden project requirements instantly.</p>
+          </div>
+
+         <div class="feature-card">
+            <div class="feature-indicator">METRICS</div>
+            <h3>Word Count Guard</h3>
+            <p>Automatically calculates reading metrics in real-time, keeping your content within the high-conversion 100–150 word standard.</p>
+         </div>
+
+         <div class="feature-card">
+            <div class="feature-indicator">SPEED</div>
+            <h3>Instant Clipboard</h3>
+            <p>One-click system architecture built to copy clean, unformatted markdown copy straight to your dashboard with zero tracking artifacts.</p>
+         </div>
+         </div>
+    </section>
+
+    <footer class="footer">
+        <p>PitchCraft &copy; 2026. Built for freelancers looking to scale their client pipeline.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
